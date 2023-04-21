@@ -42,6 +42,7 @@ public class WecomeController {
 					getConnection("jdbc:mysql://localhost:3306/batch100_db","root","mysql@1234");
 			//THIS CODE IS USED TO PUSH DATA INSIDE TABLE
 			String sql="insert into signups_tbl(username,password, email,gender) values(?,?,?,?)";
+			System.out.println("cheking");
 			//Step-3 compiling query
 			PreparedStatement pstmt=conn.prepareStatement(sql);
 			//Step-4 - Setting the values in the query
